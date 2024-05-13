@@ -12,10 +12,9 @@ while True:
         desired_car = input('Qual carro você quer comprar? ')
         option_payament = input(type_payament)
         if option_payament == 'C':
-            print(credit_payament(desired_car))
+            print(credit_payament(desired_car, 1))
             print(sale(desired_car))
-            print(display_cars_sold())
-
+            
         elif option_payament == 'D':
             print(debit_payament(desired_car))
             print(sale(desired_car))
